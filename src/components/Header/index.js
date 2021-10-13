@@ -19,9 +19,9 @@ export const Header = () => {
         mobileMenu =
             <nav className="mobile__navbar">
                 <li><Link to="/">Home</Link></li>
-                <li><a href="/">Menu 2</a></li>
-                <li><a href="/">Menu 3</a></li>
-                <li><a href="/">Menu 4</a></li>
+                <li><Link to="/">Menu 2</Link></li>
+                <li><Link to="/">Menu 3</Link></li>
+                <li><Link to="/">Menu 4</Link></li>
             </nav>
     }
 
