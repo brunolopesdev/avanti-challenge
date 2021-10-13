@@ -7,7 +7,7 @@ import Logo from "../../assets/logo.png"
 import "./index.scss"
 
 export const Header = () => {
-    const { cart, getCartTotal } = useContext(DataContext)
+    const { getCartTotal } = useContext(DataContext)
 
     const [showMenu, setShowMenu] = useState(false)
 
@@ -19,9 +19,9 @@ export const Header = () => {
         mobileMenu =
             <nav className="mobile__navbar">
                 <li><Link to="/">Home</Link></li>
-                <li><a href="#">Menu 2</a></li>
-                <li><a href="#">Menu 3</a></li>
-                <li><a href="#">Menu 4</a></li>
+                <li><a href="/">Menu 2</a></li>
+                <li><a href="/">Menu 3</a></li>
+                <li><a href="/">Menu 4</a></li>
             </nav>
     }
 
@@ -44,9 +44,9 @@ export const Header = () => {
             <nav className="avanti__navbar">
                 <ul className="navbar_links">
                     <li><Link to="/">Home</Link></li>
-                    <li><a href="#">Categorias</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Entrega</a></li>
+                    <li><Link to="/">Categorias</Link></li>
+                    <li><Link to="/">Contato</Link></li>
+                    <li><Link to="/">Entrega</Link></li>
                 </ul>
             </nav>
 
@@ -54,9 +54,9 @@ export const Header = () => {
                 <nav className="mobile__navbar">
                     <ul className="navbar_links">
                         <li><Link to="/" onClick={() => handleClick(!showMenu)}>Home</Link></li>
-                        <li><a href="#" onClick={() => handleClick(!showMenu)}>Categorias</a></li>
-                        <li><a href="#" onClick={() => handleClick(!showMenu)}>Contato</a></li>
-                        <li><a href="#" onClick={() => handleClick(!showMenu)}>Entrega</a></li>
+                        <li><Link to="/" onClick={() => handleClick(!showMenu)}>Categorias</Link></li>
+                        <li><Link to="/" onClick={() => handleClick(!showMenu)}>Contato</Link></li>
+                        <li><Link to="/" onClick={() => handleClick(!showMenu)}>Entrega</Link></li>
                     </ul>
                 </nav>
             )}

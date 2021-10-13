@@ -20,7 +20,7 @@ export const Products = () => {
             {data?.map((product, index) => (
                 <div className="main__shelf-products" key={product.id}>
                     <div className="product-img">
-                        <a href={product.linkURL} target="_blank"><img src={product.imageURL} alt="Imagem do produto" /></a>
+                        <a href={product.linkURL} target="_blank" rel="noreferrer"><img src={product.imageURL} alt="Imagem do produto" /></a>
                     </div>
                     <div className="product-info">
                         <p className="product-name">{product.name}</p>

@@ -1,6 +1,4 @@
-import { useContext } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import DataContext from "../../Context";
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import "./index.scss"
