@@ -1,0 +1,118 @@
+.avanti__shelf {
+  width: 100%;
+  max-width: 908px;
+  margin: 0 auto;
+
+  .shelf__title {
+    font-family: Raleway, "sans serif";
+    font-size: 30px;
+    color: #000;
+    padding: 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 10px;
+  }
+
+  .shelf-container {
+    font-family: "Open sans", "sans-serif";
+    width: 100%;
+    display: flex;
+    padding-bottom: 50px;
+
+    .main__shelf {
+      display: flex;
+      padding: 0 30px;
+
+      .main__shelf-products {
+        .product-img {
+          img {
+            // width: 230px ;
+          }
+        }
+
+        .product-info {
+          text-align: center;
+          padding: 10px 10px;
+          font-size: 16px;
+          font-weight: 600;
+
+          .product-name {
+            font-size: 16px;
+            padding: 0 50px;
+          }
+
+          .product-price {
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+
+            .selling-price {
+              color: #ff0000;
+            }
+          }
+          .add-to-cart {
+            width: 200px;
+            height: 38px;
+            background: #008939;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+          }
+
+          .unavailable {
+            width: 200px;
+            height: 38px;
+            background: #7d7d7d;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .shelf-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+    .shelf__title {
+      font-size: 22px;
+    }
+    .shelf__banner {
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+      }
+    }
+    .main__shelf {
+      padding: 0 150px;
+    }
+    .swiper-container {
+      width: 768px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .swiper-container {
+      width: 425px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .swiper-container {
+      width: 375px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .swiper-container {
+      width: 320px;
+    }
+  }
+}

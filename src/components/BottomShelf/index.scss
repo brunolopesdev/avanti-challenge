@@ -1,0 +1,66 @@
+.avanti__shelf {
+  width: 100%;
+  max-width: 908px;
+  margin: 0 auto;
+
+  .shelf__title {
+    font-family: Raleway, "sans serif";
+    font-size: 30px;
+    color: #000;
+    padding: 50px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 10px;
+  }
+
+  .shelf-container {
+    font-family: "Open sans", "sans-serif";
+    width: 100%;
+    max-width: 908px;
+    display: flex;
+
+    .main__shelf {
+      display: flex;
+
+      .main__shelf-products {
+        .product-img {
+          img {
+            width: 100%;
+          }
+        }
+        .product-info {
+          text-align: center;
+          padding: 10px 10px;
+          font-size: 16px;
+          font-weight: 600;
+
+          .product-name {
+            font-size: 16px;
+            padding: 0 20px;
+          }
+
+          .product-price {
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+
+            .selling-price {
+              color: #ff0000;
+            }
+          }
+          .add-to-cart {
+            width: 200px;
+            height: 38px;
+            background: #008939;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

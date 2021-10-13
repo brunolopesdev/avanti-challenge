@@ -1,0 +1,106 @@
+.cart__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  //   flex-direction: column;
+  width: 100%;
+  max-width: 908px;
+  padding: 20px 0 0 0;
+  margin: 0 auto;
+  font-family: Raleway, "sans-serif";
+
+  .cart__title {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+  .cart__products {
+    padding: 30px 0;
+    box-shadow: 0px 0px 8px #00000040;
+    border-radius: 5px;
+    width: 50%;
+
+    h3,
+    h4 {
+      padding: 5px 0;
+    }
+
+    .totalSum {
+      padding: 15px 0;
+      text-align: center;
+      font-weight: 600;
+      font-size: 25px;
+    }
+    .products {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      input {
+        margin: 15px 0;
+        text-align: center;
+        border-radius: 6px;
+        border: none;
+        box-shadow: 0px 0px 8px #00000040;
+      }
+    }
+    .remove__button {
+      position: absolute;
+      background: none;
+      border: none;
+      font-size: 25px;
+      right: 100px;
+      top: 88px;
+      cursor: pointer;
+    }
+
+    .buttons {
+      display: flex;
+
+      .checkout__button,
+      .clear__cart {
+        width: 200px;
+        height: 38px;
+        background: #008939;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        text-transform: uppercase;
+        margin: 0 13px;
+      }
+
+      .clear__cart {
+        background: crimson !important;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .remove__button {
+      right: 75px !important;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .cart__products {
+      width: 100%;
+      text-align: center;
+    }
+    .remove__button {
+      right: 85px !important;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .remove__button {
+      right: 60px !important;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .remove__button {
+      right: 40px !important;
+      top: 110px !important;
+    }
+  }
+}
